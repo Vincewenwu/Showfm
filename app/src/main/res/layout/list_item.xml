@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/avatar"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_centerVertical="true"
+        android:background="@drawable/circle_bg"/>
+
+
+    <TextView
+        android:id="@+id/novel_title_tx"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="xxxxjjjj"
+        android:textSize="20sp"
+        android:layout_toRightOf="@+id/avatar"
+        android:layout_alignTop="@+id/avatar"
+        android:layout_marginLeft="20dp"
+        android:background="@android:color/holo_green_light"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/nj_name_tx"
+        android:layout_toRightOf="@+id/avatar"
+        android:layout_below="@+id/novel_title_tx"
+        android:text="xxxxx"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="3dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/updated_tx"
+        android:layout_toRightOf="@+id/avatar"
+        android:layout_below="@+id/nj_name_tx"
+        android:text="xxxxx"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="3dp"
+        android:visibility="gone"/>
+
+</RelativeLayout>
